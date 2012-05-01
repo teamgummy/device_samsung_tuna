@@ -56,9 +56,22 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel \
-	device/samsung/tuna/init.tuna.rc:root/init.tuna.rc \
-	device/samsung/tuna/init.tuna.usb.rc:root/init.tuna.usb.rc \
-	device/samsung/tuna/ueventd.tuna.rc:root/ueventd.tuna.rc \
+	device/samsung/tuna/root/init.tuna.rc:root/init.tuna.rc \
+	device/samsung/tuna/root/init.tuna.usb.rc:root/init.tuna.usb.rc \
+	device/samsung/tuna/root/ueventd.tuna.rc:root/ueventd.tuna.rc \
+	device/samsung/tuna/root/init.goldfish.rc:root/init.goldfish.rc \
+	device/samsung/tuna/root/init.rc:root/init.rc \
+	device/samsung/tuna/root/default.prop:root/default.prop \
+	device/samsung/tuna/root/sbin/board:root/sbin/board \
+	device/samsung/tuna/root/sbin/checkt:root/sbin/checkt \
+	device/samsung/tuna/root/sbin/checkv:root/sbin/checkv \
+	device/samsung/tuna/root/sbin/ffc:root/sbin/ffc \
+	device/samsung/tuna/root/sbin/lkflash:root/sbin/lkflash \
+	device/samsung/tuna/root/sbin/oc:root/sbin/oc \
+	device/samsung/tuna/root/sbin/sm:root/sbin/sm \
+	device/samsung/tuna/root/sbin/so:root/sbin/so \
+	device/samsung/tuna/root/sbin/sr:root/sbin/sr \
+	device/samsung/tuna/root/sbin/zram:root/sbin/zram \
 	device/samsung/tuna/media_profiles.xml:system/etc/media_profiles.xml \
 	device/samsung/tuna/gps.conf:system/etc/gps.conf
 
