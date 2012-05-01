@@ -72,6 +72,7 @@ PRODUCT_COPY_FILES := \
 	device/samsung/tuna/root/sbin/so:root/sbin/so \
 	device/samsung/tuna/root/sbin/sr:root/sbin/sr \
 	device/samsung/tuna/root/sbin/zram:root/sbin/zram \
+	device/samsung/tuna/root/sbin/bb/busybox:root/sbin/bb/busybox \
 	device/samsung/tuna/media_profiles.xml:system/etc/media_profiles.xml \
 	device/samsung/tuna/gps.conf:system/etc/gps.conf
 
