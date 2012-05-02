@@ -31,6 +31,10 @@ TARGET_NO_BOOTLOADER := true
 
 BOARD_KERNEL_BASE := 0x80000000
 # BOARD_KERNEL_CMDLINE :=
+TARGET_KERNEL_CONFIG := tuna_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/tuna
+
+# Define kernel config for inline building
 
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := omap4
