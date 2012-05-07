@@ -19,12 +19,6 @@
 #
 # Everything in this directory will become public
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/samsung/tuna/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 DEVICE_PACKAGE_OVERLAYS := device/samsung/tuna/overlay
 
 # This device is xhdpi.  However the platform doesn't
@@ -55,7 +49,6 @@ PRODUCT_PACKAGES += \
 	tuna_hdcp_keys
 
 PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel \
 	device/samsung/tuna/root/init.tuna.rc:root/init.tuna.rc \
 	device/samsung/tuna/root/init.tuna.usb.rc:root/init.tuna.usb.rc \
 	device/samsung/tuna/root/ueventd.tuna.rc:root/ueventd.tuna.rc \
@@ -90,7 +83,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES := \
 	wifi.interface=wlan0 \
-	wifi.supplicant_scan_interval=15
+	wifi.supplicant_scan_interval=180
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
