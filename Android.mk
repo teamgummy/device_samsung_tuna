@@ -29,6 +29,9 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_SUFFIX := -timestamp
 
+subdir_makefiles:= \
+    $(LOCAL_PATH)/GNexusParts/Android.mk 
+
 include $(BUILD_SYSTEM)/base_rules.mk
 
 $(LOCAL_BUILT_MODULE): HDCP_KEYS_FILE := /factory/hdcp.keys
